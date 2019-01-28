@@ -1,3 +1,7 @@
+#Finds the position in the sorted array to insert the new element such that the array remains sorted
+# bisect_left -> arr[0:lo] < x(insertion element) ; arr[lo:hi] >= x
+#bisect_right -> arr[0:lo] <= x(insertion element) ; arr[lo:hi] > x
+
 def myBisectRight(arr, x, lo=0, hi=-1):
     if hi == -1:
         hi = len(arr)
